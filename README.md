@@ -12,7 +12,7 @@ A more thorough look at parameters is present in the next section.
 
 ## Parameters
 
-**Run_Metrics Class** - To create an instance of the **Run_Metrics** class, there is one forced parameter "language" and six optional parameters. Each is detailed below. The first four are split into Graph2Tree solvability and SAUSolver solvability, using both models separately to make the evaluation. More detail on the metrics can be found in the report "Evaluating Math Word Problem Generation Techniques".
+**Run_Metrics Class** - To create an instance of the **Run_Metrics** class, there is one forced parameter "language" and six optional parameters. Each is detailed below. 
 
 - **language** - specifies the language to use. Two letters should be used such as "en" or "zh", as specified by NLTK documentation.
 - **task_type** - used to specify the type of equations, either "single_equation" or "multi_equation". Default value is "single_equation".
@@ -27,7 +27,7 @@ A more thorough look at parameters is present in the next section.
 **get_metrics() Method** - This takes two parameters. "test_data" should be a list of 3 inner lists but containing the generated MWPs dataset. "similar_ratio" is as the threshold below which math word problems are exlcuding from the "Exclusion" tests. This is set to 0.9 by default.
 
 ## Interpretation of Metrics
-There are 10 associated metrics output from the package. They are detailed below.
+There are 10 associated metrics output from the package. They are detailed below. The first four are split into Graph2Tree solvability and SAUSolver solvability, using both models separately to make the evaluation. More detail on the metrics can be found in the report "Evaluating Math Word Problem Generation Techniques".
 
 - **Solvability of Problems in Original Dataset** - The accuracy of the trained MWP solver models on the test set associated with the original dataset.
   - Graph2Tree
