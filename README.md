@@ -8,7 +8,7 @@ The MWP-SS-Metrics is a metrics package used to evaluate the performance of math
 
 To run the package, clone the repository and find the "run_metrics.py" file in the "metrics" folder. This is the only class that should be used when running the package. There are two functions associated with the "Run_Metrics" class. "init_model" and "get_metrics". The "init_model" method should be used to train the MWP solver models, given the train, test and validation dataset split that was used to generate the math word problems. This will likely take quite a large amount of time since two MWP solver models must be trained on the data. The "get_metrics" method can be used following the use of the "init_model" method. This method will calculate the similarity of problems to the trainset, re-run the solver models excluding highly similar problems and output the final metric results.
 
-An more thorough look at parameters is present in the next section.
+A more thorough look at parameters is present in the next section.
 
 ## Parameters
 
