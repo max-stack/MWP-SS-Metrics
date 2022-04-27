@@ -27,6 +27,28 @@ An more thorough look at parameters is present in the next section.
 **get_metrics() Method** - This takes two parameters. "test_data" should be a list of 3 inner lists but containing the generated MWPs dataset. "similar_ratio" is as the threshold below which math word problems are exlcuding from the "Exclusion" tests. This is set to 0.9 by default.
 
 ## Interpretation of Metrics
+There are 10 associated metrics output from the package. They are detailed below.
+
+- **Solvability of Problems in Original Dataset** - The accuracy of the trained MWP solver models on the test set associated with the original dataset.
+  - Graph2Tree
+  - SAUSolver
+
+- **Solvability of Problems in Original Dataset Excluding High Similarity Problems** - Same as above but after excluding problems with SImilarity Ration > 0.9 from the dataset.
+  - Graph2Tree
+  - SAUSolver
+
+- **Solvability of Generated Problems** - The accuracy of the trained MWP solver models on the model generated dataset. 
+  - Graph2Tree
+  - SAUSolver
+
+- **Solvability of Generated Problems Excluding High Similarity Problems** Same as above but after excluding problems with SImilarity Ration > 0.9 from the dataset.
+  - Graph2Tree
+  - SAUSolver
+
+- **Average Similarity Score of Problems in Original Dataset** - The similarity score is calculated for each problem in the test set associated with the original dataset and the average over the dataset is calculated.
+
+- **Average Similarity Score of Generated Problems** - The similarity score is calculated for each problem in the model generated dataset and the average over the dataset is calculated.
+
 
 ## Changing More Advanced Features
 
