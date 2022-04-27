@@ -12,7 +12,7 @@ An more thorough look at parameters is present in the next section.
 
 ## Parameters
 
-**Run_Metrics Class** - To create an instance of the Run_Metrics class, there is one forced parameter "language" and six optional parameters. Each is detailed below.
+**Run_Metrics Class** - To create an instance of the Run_Metrics class, there is one forced parameter "language" and six optional parameters. Each is detailed below. The first four are split into Graph2Tree solvability and SAUSolver solvability, using both models separately to make the evaluation. More detail on the metrics can be found in the report "Evaluating Math Word Problem Generation Techniques".
 
 - **language** - specifies the language to use. Two letters should be used such as "en" or "zh", as specified by NLTK documentation.
 - **task_type** - used to specify the type of equations, either "single_equation" or "multi_equation". Default value is "single_equation".
